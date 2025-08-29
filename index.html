@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+            padding: 0;
+        }
+
+        .container {
+            width: 100%;
+            margin: 0;
+            background-color: white;
+            padding: 30px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .title {
+            font-size: 2.5em;
+            color: #333;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+
+        .subtitle {
+            font-size: 1.2em;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .author-link {
+            color: #0066cc;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .author-link:hover {
+            color: #004499;
+            text-decoration: underline;
+        }
+
+        .button {
+            background-color: #cce7ff;
+            color: #333;
+            padding: 10px 25px;
+            border: 1px solid #99d6ff;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #b3d9ff;
+        }
+
+        .section {
+            margin: 40px 0;
+            text-align: center;
+        }
+
+        .section-title {
+            font-size: 1.5em;
+            color: #333;
+            font-weight: 500;
+            margin-bottom: 20px;
+        }
+
+        .prompt-type-description {
+            font-size: 1.3em;
+            color: #333;
+            font-weight: 600;
+            margin: 50px 0 30px 0;
+            text-align: center;
+        }
+
+        .picture-section img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .picture-caption {
+            margin-top: 15px;
+            font-style: italic;
+            color: #666;
+            font-size: 1em;
+            text-align: center;
+            line-height: 1.4;
+        }
+
+        .text-content {
+            line-height: 1.6;
+            color: #444;
+            font-size: 1.1em;
+            text-align: left;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .prompt-content {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 10px;
+            text-align: left;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .survey-section {
+            margin: 50px 0;
+            text-align: center;
+        }
+
+        .survey-content {
+            background-color: #cce7ff;
+            padding: 30px;
+            border-radius: 8px;
+            margin-top: 20px;
+            text-align: left;
+            border: 1px solid #99d6ff;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .survey-guide {
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .question-group {
+            margin-bottom: 25px;
+        }
+
+        .question-type {
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .question-item {
+            margin-bottom: 8px;
+            color: #333;
+            line-height: 1.5;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+            
+            .title {
+                font-size: 2em;
+            }
+            
+            .section {
+                margin: 30px 0;
+            }
+
+            .survey-content {
+                padding: 20px;
+            }
+
+            .prompt-type-description {
+                font-size: 1.2em;
+                margin: 40px 0 25px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <div class="header">
+            <h1 class="title">TITLE</h1>
+            <p class="subtitle">
+                <a href="https://author1-website.com" class="author-link" target="_blank">author 1</a>, 
+                <a href="https://author2-website.com" class="author-link" target="_blank">author 2</a>
+            </p>
+            <button class="button">button 1</button>
+        </div>
+
+        <!-- Picture Section -->
+        <div class="section picture-section">
+            <img src="images/image_placeholder.jpg" alt="Project Image">
+            <div class="picture-caption">[Paste your picture caption here]</div>
+        </div>
+
+        <!-- Body Text Section -->
+        <div class="section">
+            <h2 class="section-title">Body text</h2>
+            <div class="text-content">
+                <p>This is where your main content will go. You can add detailed descriptions, explanations, or any other text content that describes your project.</p>
+            </div>
+        </div>
+
+        <!-- Prompt Type 1 Description -->
+        <div class="prompt-type-description">[Paste prompt type 1 description here]</div>
+
+        <!-- Prompt Template 1 Section -->
+        <div class="section">
+            <h2 class="section-title">Prompt template 1</h2>
+            <div class="prompt-content">
+                <p>Enter your first prompt template here.</p>
+            </div>
+        </div>
+
+        <!-- Prompt Template 2 Section -->
+        <div class="section">
+            <h2 class="section-title">Prompt template 2</h2>
+            <div class="prompt-content">
+                <p>Enter your second prompt template here.</p>
+            </div>
+        </div>
+
+        <!-- Prompt Template 3 Section -->
+        <div class="section">
+            <h2 class="section-title">Prompt template 3</h2>
+            <div class="prompt-content">
+                <p>Enter your third prompt template here.</p>
+            </div>
+        </div>
+
+        <!-- Prompt Type 2 Description -->
+        <div class="prompt-type-description">[Paste prompt type 2 description here]</div>
+
+        <!-- Prompt Template 4 Section -->
+        <div class="section">
+            <h2 class="section-title">Prompt template 4</h2>
+            <div class="prompt-content">
+                <p>Enter your fourth prompt template here.</p>
+            </div>
+        </div>
+
+        <!-- Prompt Template 5 Section -->
+        <div class="section">
+            <h2 class="section-title">Prompt template 5</h2>
+            <div class="prompt-content">
+                <p>Enter your fifth prompt template here.</p>
+            </div>
+        </div>
+
+        <!-- Prompt Template 6 Section -->
+        <div class="section">
+            <h2 class="section-title">Prompt template 6</h2>
+            <div class="prompt-content">
+                <p>Enter your sixth prompt template here.</p>
+            </div>
+        </div>
+
+        <!-- Evaluation Description -->
+        <div class="prompt-type-description">[Paste evaluation description here]</div>
+
+        <!-- Evaluation Prompt Example Section -->
+        <div class="section">
+            <h2 class="section-title">Evaluation Prompt Example</h2>
+            <div class="prompt-content">
+                <p>Enter your evaluation prompt example here.</p>
+            </div>
+        </div>
+
+        <!-- Survey Section -->
+        <div class="survey-section">
+            <h2 class="section-title">Survey Questionnaire</h2>
+            <div class="survey-content">
+                <div class="survey-guide">[Paste your answering guide here]</div>
+                
+                <div class="question-group">
+                    <div class="question-type">[Paste question type 1 here]</div>
+                    <div class="question-item">1. [Paste question 1 content here]</div>
+                </div>
+
+                <div class="question-group">
+                    <div class="question-type">[Paste question type 2 here]</div>
+                    <div class="question-item">2. [Paste question 2 content here]</div>
+                </div>
+
+                <div class="question-group">
+                    <div class="question-type">[Paste question type 3 here]</div>
+                    <div class="question-item">3. [Paste question 3 content here]</div>
+                </div>
+
+                <div class="question-group">
+                    <div class="question-type">[Paste question type 4 here]</div>
+                    <div class="question-item">4. [Paste question 4 content here]</div>
+                </div>
+
+                <div class="question-group">
+                    <div class="question-type">[Paste question type 5 here]</div>
+                    <div class="question-item">5. [Paste question 5 content here]</div>
+                    <div class="question-item">6. [Paste question 6 content here]</div>
+                </div>
+
+                <div class="question-group">
+                    <div class="question-type">[Paste question type 6 here]</div>
+                    <div class="question-item">7. [Paste question 7 content here]</div>
+                </div>
+
+                <div class="question-group">
+                    <div class="question-type">[Paste question type 7 here]</div>
+                    <div class="question-item">8. [Paste question 8 content here]</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
