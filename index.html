@@ -213,19 +213,54 @@
         </div>
 
         <!-- Prompt Type 1 Description -->
-        <div class="prompt-type-description">[Paste prompt type 1 description here]</div>
+        <div class="prompt-type-description">Spatial Agent Prompt Templates</div>
 
         <!-- Prompt Template 1 Section -->
         <div class="section">
-            <h2 class="section-title">Prompt template 1</h2>
+            <h2 class="section-title">Object Selection Prompt</h2>
             <div class="prompt-content">
-                <p>Enter your first prompt template here.</p>
+                <p>
+                    """You are an interior designer selecting furniture for a {room_type}.
+Strictly follow the below instructions!
+
+## AVAILABLE FACTORIES
+seating.BedFactory, seating.SofaFactory, seating.ArmChairFactory,
+seating.ChairFactory, seating.OfficeChairFactory, seating.BarChairFactory
+tables.CoffeeTableFactory, tables.SideTableFactory, tables.TableDiningFactory
+lamp.FloorLampFactory shelves.TVStandFactory, shelves.SimpleBookcaseFactory, shelves.CellShelfFactory,
+shelves.LargeShelfFactory, shelves.KitchenCabinetFactory, shelves.SingleCabinetFactory
+appliances.DishwasherFactory, appliances.OvenFactory, appliances.BeverageFridgeFactory
+bathroom.StandingSinkFactory, bathroom.ToiletFactory, bathroom.BathtubFactory
+elements.RugFactory
+
+## GUIDELINES
+1. Choose furniture suited for a {room_type} of room size: {room_size} square meters and polygon {room_polygon}.
+2. The {room_type} has this specification: {room_spec}.
+3. Object names must be **lowercase plural without spaces** (e.g., coffeetables, floorlamps)
+4. Include quantities for multiple identical items.
+5. Follow these constraints:
+   - Maximum: 1 floor lamp per room.
+   - Scale furniture to fit {room_size} square meters.
+
+## SUGGESTION
+1. If room size is small (e.g. 10-20 square meters), choose smaller furniture.
+2. Choose less furniture if room size is small.
+
+## TEMPLATE
+room_type | selected_objects | furniture_factory | quantity
+
+## OUTPUT EXAMPLES
+livingroom | sofas | seating.SofaFactory | 1
+livingroom | coffeetables | tables.CoffeeTableFactory | 1
+
+Provide only the formatted output with no additional text."""
+                </p>
             </div>
         </div>
 
         <!-- Prompt Template 2 Section -->
         <div class="section">
-            <h2 class="section-title">Prompt template 2</h2>
+            <h2 class="section-title">Object Constraints Prompt</h2>
             <div class="prompt-content">
                 <p>Enter your second prompt template here.</p>
             </div>
@@ -233,18 +268,18 @@
 
         <!-- Prompt Template 3 Section -->
         <div class="section">
-            <h2 class="section-title">Prompt template 3</h2>
+            <h2 class="section-title">Object Score Terms Prompt</h2>
             <div class="prompt-content">
                 <p>Enter your third prompt template here.</p>
             </div>
         </div>
 
         <!-- Prompt Type 2 Description -->
-        <div class="prompt-type-description">[Paste prompt type 2 description here]</div>
+        <div class="prompt-type-description">Interactive Agent Prompt Templates</div>
 
         <!-- Prompt Template 4 Section -->
         <div class="section">
-            <h2 class="section-title">Prompt template 4</h2>
+            <h2 class="section-title">Object Selection Prompt</h2>
             <div class="prompt-content">
                 <p>Enter your fourth prompt template here.</p>
             </div>
@@ -252,7 +287,7 @@
 
         <!-- Prompt Template 5 Section -->
         <div class="section">
-            <h2 class="section-title">Prompt template 5</h2>
+            <h2 class="section-title">Object Constraints Prompt</h2>
             <div class="prompt-content">
                 <p>Enter your fifth prompt template here.</p>
             </div>
@@ -260,14 +295,14 @@
 
         <!-- Prompt Template 6 Section -->
         <div class="section">
-            <h2 class="section-title">Prompt template 6</h2>
+            <h2 class="section-title">Object Score Terms Prompt</h2>
             <div class="prompt-content">
                 <p>Enter your sixth prompt template here.</p>
             </div>
         </div>
 
         <!-- Evaluation Description -->
-        <div class="prompt-type-description">[Paste evaluation description here]</div>
+        <div class="prompt-type-description">Evaluation Setup</div>
 
         <!-- Evaluation Prompt Example Section -->
         <div class="section">
@@ -281,42 +316,42 @@
         <div class="survey-section">
             <h2 class="section-title">Survey Questionnaire</h2>
             <div class="survey-content">
-                <div class="survey-guide">[Paste your answering guide here]</div>
+                <div class="survey-guide">For questions 1-7, please rate from 1 (Strongly Disagree) to 5 (Strongly Agree).</div>
                 
                 <div class="question-group">
-                    <div class="question-type">[Paste question type 1 here]</div>
-                    <div class="question-item">1. [Paste question 1 content here]</div>
+                    <div class="question-type">Sense of Co-Creation</div>
+                    <div class="question-item">1.  I felt we were co-creating the design rather than the framework designing for me.</div>
                 </div>
 
                 <div class="question-group">
-                    <div class="question-type">[Paste question type 2 here]</div>
-                    <div class="question-item">2. [Paste question 2 content here]</div>
+                    <div class="question-type">Transparency & Explainability</div>
+                    <div class="question-item">2. The framework clearly explained how each design choice was made.</div>
                 </div>
 
                 <div class="question-group">
-                    <div class="question-type">[Paste question type 3 here]</div>
-                    <div class="question-item">3. [Paste question 3 content here]</div>
+                    <div class="question-type">Expressiveness & Ease-of-Use</div>
+                    <div class="question-item">3. The framework helped me express my preferences without requiring technical jargon.</div>
                 </div>
 
                 <div class="question-group">
-                    <div class="question-type">[Paste question type 4 here]</div>
-                    <div class="question-item">4. [Paste question 4 content here]</div>
+                    <div class="question-type">Overall Satisfaction</div>
+                    <div class="question-item">4. Overall, I am satisfied with this framework for participatory design.</div>
                 </div>
 
                 <div class="question-group">
-                    <div class="question-type">[Paste question type 5 here]</div>
-                    <div class="question-item">5. [Paste question 5 content here]</div>
-                    <div class="question-item">6. [Paste question 6 content here]</div>
+                    <div class="question-type">System Comparison</div>
+                    <div class="question-item">5. This framework was easier to communicate compared to traditional design software.</div>
+                    <div class="question-item">6. This system felt more like a collaboration compared with traditional design software.</div>
                 </div>
 
                 <div class="question-group">
-                    <div class="question-type">[Paste question type 6 here]</div>
-                    <div class="question-item">7. [Paste question 7 content here]</div>
+                    <div class="question-type">Responsiveness to Feedback</div>
+                    <div class="question-item">7. The system adapted well to my feedback and design preferences.</div>
                 </div>
 
                 <div class="question-group">
-                    <div class="question-type">[Paste question type 7 here]</div>
-                    <div class="question-item">8. [Paste question 8 content here]</div>
+                    <div class="question-type">Preferred Tool</div>
+                    <div class="question-item">8. Overall, which one would you prefer to use in a real project, this framework or traditional design software (e.g. SketchUp and RoomSketcher)?</div>
                 </div>
             </div>
         </div>
