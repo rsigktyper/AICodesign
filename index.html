@@ -463,7 +463,23 @@ Use everyday language a non-designer would understand. Organize by furniture typ
         <!-- Evaluation Prompt Example Section -->
         <div class="section">
             <h2 class="section-title">Evaluation Prompt Example</h2>
-            <div class="prompt-content">Enter your evaluation prompt example here.</div>
+            <div class="prompt-content">You are a interior design evaluator.
+
+Your will learn from the design criteria rubric, understand what is a good design and bad design, then you will grade the generated 3D scene.
+
+Design criteria rubric:
+{design_criteria_rubric}
+
+Please grade the following 3D indoor design base on the following criteria, give a score out of 10 for each criteria, and give a brief reason why you give this score: 
+1. User intent alignment 
+2. aesthetic coherence 
+3. functionality 
+4. circulation design 
+
+Below is the room specification and user requirement: 
+room type: {room_type}
+room spec: {room_spec} 
+room size: {room_size}</div>
         </div>
 
         <!-- Survey Section -->
