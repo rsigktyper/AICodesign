@@ -166,6 +166,80 @@
             line-height: 1.5;
         }
 
+        /* Hero Section Styles */
+        .hero-section {
+            position: relative;
+            width: 100%;
+            min-height: 70vh;
+            background-image: url('images/title_image.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 40px 0;
+        }
+
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(255, 255, 255, 0.85);
+            z-index: 1;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 60px 40px;
+            text-align: center;
+        }
+
+        .hero-content .section-title {
+            font-size: 2em;
+            color: #333;
+            font-weight: 600;
+            margin-bottom: 30px;
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+        }
+
+        .hero-content .text-content {
+            color: #333;
+            font-size: 1.1em;
+            line-height: 1.7;
+            text-align: left;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Tablet Responsive */
+        @media (max-width: 1024px) {
+            .hero-section {
+                min-height: 60vh;
+            }
+
+            .hero-content {
+                padding: 50px 30px;
+            }
+
+            .hero-content .section-title {
+                font-size: 1.8em;
+            }
+
+            .hero-content .text-content {
+                font-size: 1.05em;
+                padding: 25px;
+            }
+        }
+
         @media (max-width: 768px) {
             .container {
                 padding: 20px;
@@ -191,6 +265,31 @@
             .prompt-content {
                 font-size: 0.85em;
             }
+
+            /* Hero Section Mobile Styles */
+            .hero-section {
+                min-height: 50vh;
+                margin: 20px 0;
+            }
+
+            .hero-overlay {
+                background-color: rgba(255, 255, 255, 0.9);
+            }
+
+            .hero-content {
+                padding: 30px 20px;
+            }
+
+            .hero-content .section-title {
+                font-size: 1.5em;
+                margin-bottom: 20px;
+            }
+
+            .hero-content .text-content {
+                font-size: 0.95em;
+                padding: 20px;
+                line-height: 1.6;
+            }
         }
     </style>
 </head>
@@ -206,17 +305,13 @@
             <button class="button" type="button" onclick="window.open('https://rsigktyper.github.io/AICodesign/', '_blank');">click</button>
         </div>
 
-        <!-- Picture Section -->
-        <div class="section picture-section">
-            <img src="images/title_image.jpg" alt="Project Image">
-            <div class="picture-caption">3D interior design outcome after co-design with the multi-modal, multi-agent framework.</div>
-        </div>
-
-        <!-- Body Text Section -->
-        <div class="section">
-            <h2 class="section-title">Abstract</h2>
-            <div class="text-content">
-                <p>In architectural interior design, miscommunication frequently arises as clients lack design
+        <!-- Hero Section with Background Image and Abstract -->
+        <div class="hero-section">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h2 class="section-title">Abstract</h2>
+                <div class="text-content">
+                    <p>In architectural interior design, miscommunication frequently arises as clients lack design
 knowledge, while designers struggle to explain complex spatial relationships, leading to
 delayed timelines and financial losses. Recent advancements in generative layout tools
 narrow the gap by automating 3D visualizations. However, prevailing methodologies exhibit
@@ -237,6 +332,7 @@ layouts higher in user intent alignment, aesthetic coherence, functionality, and
 Questionnaire results indicated 77% satisfaction and a clear preference over traditional
 design software. These findings suggest the framework enhances user-centric communication
 and fosters more inclusive, effective, and resilient design processes.</p>
+                </div>
             </div>
         </div>
 
