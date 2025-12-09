@@ -46,11 +46,12 @@
             color: #0066cc;
             text-decoration: none;
             transition: color 0.3s ease;
+            cursor: default;
         }
 
         .author-link:hover {
             color: #004499;
-            text-decoration: underline;
+            text-decoration: none;
         }
 
         .button {
@@ -66,6 +67,16 @@
 
         .button:hover {
             background-color: #b3d9ff;
+        }
+
+        .button[disabled],
+        .button[aria-disabled="true"] {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+        .button[disabled]:hover,
+        .button[aria-disabled="true"]:hover {
+            background-color: #cce7ff;
         }
 
         .section {
@@ -309,10 +320,10 @@
         <div class="header">
             <h1 class="title">Intelligent Co-Design: An Interactive LLM Framework for Interior Spatial Design via Multi-Modal Agents</h1>
             <p class="subtitle">
-                <a href="https://rsigktyper.github.io/AICodesign/" class="author-link" target="_blank">Ren Jian Lim</a>, 
-                <a href="https://rsigktyper.github.io/AICodesign/" class="author-link" target="_blank">Rushi Dai</a>
+                <span class="author-link">Ren Jian Lim</span>, 
+                <span class="author-link">Rushi Dai</span>
             </p>
-            <button class="button" type="button" onclick="window.open('https://rsigktyper.github.io/AICodesign/', '_blank');">Paper (Avaliable soon)</button>
+            <button class="button" type="button" aria-disabled="true" disabled>Paper (Avaliable soon)</button>
         </div>
 
         <!-- Hero Section with Background Image and Abstract -->
