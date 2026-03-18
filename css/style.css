@@ -36,7 +36,7 @@ body {
 }
 
 .author-link {
-    color: #000000 /*#0066cc*/;
+    color: #0066cc;
     text-decoration: none;
     transition: color 0.3s ease;
     cursor: default;
