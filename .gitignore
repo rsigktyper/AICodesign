@@ -16,5 +16,5 @@ Thumbs.db
 *.tmp
 *.bak
 
-# SpecStory (generated)
+# SpecStory
 .specstory/

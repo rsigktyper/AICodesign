@@ -10,6 +10,66 @@ body {
     padding: 0;
 }
 
+/* Minimal top navigation (blend-in, right-aligned links) */
+.site-nav {
+    background-color: transparent;
+    padding: 0 30px;
+}
+
+.site-nav-inner {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 14px 0 10px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.site-nav-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: flex-end;
+    gap: 1.75rem 2.25rem;
+}
+
+.site-nav-list a {
+    font-size: 0.78rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #777;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.site-nav-list a:hover {
+    color: #0066cc;
+}
+
+.site-nav-current {
+    font-size: 0.78rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #333;
+}
+
+.site-nav-num {
+    color: #aaa;
+    font-weight: normal;
+    margin-right: 0.35em;
+}
+
+/* Shown only when scripting is disabled (see <noscript> in HTML) */
+.noscript-banner {
+    margin: 0;
+    padding: 0.5rem 1.5rem;
+    font-size: 0.85rem;
+    text-align: center;
+    color: #555;
+    background-color: #fff9e6;
+    border-bottom: 1px solid #edd9a8;
+}
+
 .container {
     width: 100%;
     margin: 0;
@@ -27,6 +87,7 @@ body {
     color: #333;
     margin-bottom: 15px;
     font-weight: bold;
+    line-height: 1.28;
 }
 
 .subtitle {
@@ -96,6 +157,31 @@ body {
     padding-bottom: 10px;
 }
 
+/* Paper figures: narrow column for diagrams only (title uses full container like appendix) */
+.picture-section {
+    width: 100%;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+}
+
+.picture-section .diagram-frame {
+    border: none;
+    padding: 0;
+    background-color: transparent;
+    box-shadow: none;
+    border-radius: 0;
+}
+
+.picture-section .diagram-frame img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+
 .picture-section img {
     max-width: 100%;
     height: auto;
@@ -103,12 +189,12 @@ body {
 }
 
 .picture-caption {
-    margin-top: 15px;
+    margin-top: 16px;
     font-style: italic;
     color: #666;
-    font-size: 1em;
+    font-size: 0.95em;
     text-align: center;
-    line-height: 1.4;
+    line-height: 1.45;
 }
 
 .text-content {
@@ -258,6 +344,22 @@ body {
 }
 
 @media (max-width: 768px) {
+    .site-nav {
+        padding: 0 20px;
+    }
+
+    .site-nav-inner {
+        padding: 10px 0 6px;
+    }
+
+    .site-nav-list {
+        gap: 1rem 1.25rem;
+    }
+
+    .site-nav-list a {
+        font-size: 0.72rem;
+    }
+
     .container {
         padding: 20px;
     }

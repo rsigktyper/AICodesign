@@ -27,7 +27,7 @@ jobs:
       - name: Prepare site
         run: |
           mkdir -p _site
-          cp -r index.html css images README.md _site/ 2>/dev/null || true
+          cp -r index.html content.html css images js README.md _site/ 2>/dev/null || true
 
       - name: Inject site config
         run: |

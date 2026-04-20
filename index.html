@@ -6,8 +6,24 @@
     <title>Project Page</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-    <div class="container">
+<body data-nav-active="appendix">
+    <header class="site-nav" id="site-nav-mount" role="banner">
+        <div id="site-nav-nojs" class="site-nav-nojs">
+            <div class="site-nav-inner">
+                <nav aria-label="Primary">
+                    <ul class="site-nav-list">
+                        <li><span class="site-nav-current" aria-current="page"><span class="site-nav-num">01.</span>Appendix</span></li>
+                        <li><a href="content.html"><span class="site-nav-num">02.</span>Content</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <noscript>
+        <p class="noscript-banner">JavaScript is disabled. Use the navigation links in the bar at the top of the page.</p>
+    </noscript>
+    <script src="js/site-nav.js"></script>
+    <div class="container" id="appendix">
         <!-- Header Section -->
         <div class="header">
             <h1 class="title">Intelligent Co-Design: An Interactive LLM Framework for Interior Spatial Design via Multi-Modal Agents</h1>

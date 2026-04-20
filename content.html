@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paper figures — Intelligent Co-Design</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-nav-active="content">
+    <header class="site-nav" id="site-nav-mount" role="banner">
+        <div id="site-nav-nojs" class="site-nav-nojs">
+            <div class="site-nav-inner">
+                <nav aria-label="Primary">
+                    <ul class="site-nav-list">
+                        <li><a href="index.html#appendix"><span class="site-nav-num">01.</span>Appendix</a></li>
+                        <li><span class="site-nav-current" aria-current="page"><span class="site-nav-num">02.</span>Content</span></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <noscript>
+        <p class="noscript-banner">JavaScript is disabled. Use the navigation links in the bar at the top of the page.</p>
+    </noscript>
+    <script src="js/site-nav.js"></script>
+    <div class="container figures-page" id="content">
+        <div class="header">
+            <h1 class="title">Intelligent Co-Design: An Interactive LLM Framework for Interior Spatial Design via Multi-Modal Agents</h1>
+        <!--
+            <p class="subtitle">
+                <a class="author-link" href="https://limicodi.github.io/" target="_blank" rel="noopener noreferrer">Ren Jian Lim</a>, 
+                <a class="author-link" href="https://dairushi.com/" target="_blank" rel="noopener noreferrer">Rushi Dai*</a>
+            </p>
+        -->
+            <p class="subtitle">Diagrams and illustrations from the paper.</p>
+        </div>
+
+        <figure class="picture-section section">
+            <div class="diagram-frame">
+                <img src="images/diagram/C1_Framework-overview.jpg" alt="Framework overview">
+            </div>
+            <figcaption class="picture-caption">Framework overview: a frontend interface collects input from user-agent dialogue; these inputs flow to a multi-agent system that iteratively refines
+                spatial rules and output the final 3D interior scene.</figcaption>
+        </figure>
+
+        <figure class="picture-section section">
+            <div class="diagram-frame">
+                <img src="images/diagram/C2_Diagram-of-user-agent-interaction-across-three stages.jpg" alt="Diagram of user agent interaction across three stages">
+            </div>
+            <figcaption class="picture-caption">Diagram of user-agent interaction across three stages: object selection, constraints, and score terms.</figcaption>
+        </figure>
+
+        <figure class="picture-section section">
+            <div class="diagram-frame">
+                <img src="images/diagram/C3_Agent-interaction-diagram.jpg" alt="Agent interaction diagram">
+            </div>
+            <figcaption class="picture-caption">Agent interaction diagram. User input, RAG context, and the Reference Agent seed the Spatial Agent, which generates initial spatial rules. Refinement follows either manual (user and Interactive Agent) or auto (Grader Agent loop) mode until final rules are accepted.</figcaption>
+        </figure>
+
+        <figure class="picture-section section">
+            <div class="diagram-frame">
+                <img src="images/diagram/C4_The-diagram-of-Spatial-Agent.jpg" alt="The diagram of the Spatial Agent">
+            </div>
+            <figcaption class="picture-caption">The diagram of the Spatial Agent. RAG and user inputs flow through three prompted LLM stages including object selection, object constraint, and object score terms. Each output from the stages passes a gate; the accepted results collectively form the agent's final lists of selected objects, associated spatial constraints and score terms.</figcaption>
+        </figure>
+<!--
+        <figure class="picture-section section">
+            <div class="diagram-frame">
+                <img src="images/image_placeholder.jpg" alt="placeholder image">
+            </div>
+            <figcaption class="picture-caption">Add caption here.</figcaption>
+        </figure>
+
+        <figure class="picture-section section">
+            <div class="diagram-frame">
+                <img src="images/image_placeholder.jpg" alt="placeholder image">
+            </div>
+            <figcaption class="picture-caption">Add caption here.</figcaption>
+        </figure>
+
+        <figure class="picture-section section">
+            <div class="diagram-frame">
+                <img src="images/image_placeholder.jpg" alt="placeholder image">
+            </div>
+            <figcaption class="picture-caption">Add caption here.</figcaption>
+        </figure>
+    -->
+
+    </div>
+    <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "SITE_PERF_KEY"}'></script>
+</body>
+</html>
