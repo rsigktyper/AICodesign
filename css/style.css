@@ -96,6 +96,11 @@ body {
     margin-bottom: 20px;
 }
 
+.header .button {
+    display: inline-block;
+    margin-top: 12px;
+}
+
 .author-link {
     color: #0066cc;
     text-decoration: none;
